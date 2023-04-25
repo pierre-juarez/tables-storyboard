@@ -32,9 +32,24 @@ class ViewController: UIViewController {
         list.append(elem2)
         list.append(elem3)
         list.append(elem4)
+        
+        self.paintNavigation()
     }
-
-
+    
+    
+    func paintNavigation(){
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .purple
+        appearance.titleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 25.0),
+                                          .foregroundColor: UIColor.white]
+        
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
+    
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{

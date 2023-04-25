@@ -49,6 +49,21 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "DetailContactViewController" {
+            if let id = contactTable.indexPathForSelectedRow{
+                let data = list[id.row]
+                let controller = segue.destination as? DetailContactViewController
+                controller?.data = data
+            }
+        }
+    }
+    
     
 }
 
@@ -66,5 +81,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "DetailContactViewController", sender: self)
+    }
     
 }

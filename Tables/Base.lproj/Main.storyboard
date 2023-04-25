@@ -20,24 +20,24 @@
                                 <rect key="frame" x="0.0" y="91" width="390" height="719"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellTableContact" textLabel="vof-b4-KcB" detailTextLabel="bHA-3s-hpn" style="IBUITableViewCellStyleSubtitle" id="vly-oy-NDI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellTableContact" textLabel="vof-b4-KcB" detailTextLabel="bHA-3s-hpn" style="IBUITableViewCellStyleSubtitle" id="vly-oy-NDI">
                                         <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vly-oy-NDI" id="CTC-2R-4UC">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vof-b4-KcB">
-                                                    <rect key="frame" x="20" y="6.0000000000000009" width="25" height="14.333333333333334"/>
+                                                    <rect key="frame" x="20" y="6" width="31" height="18"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bHA-3s-hpn">
-                                                    <rect key="frame" x="19.999999999999996" y="22.333333333333336" width="32.666666666666664" height="14.333333333333334"/>
+                                                    <rect key="frame" x="20" y="24" width="33" height="15.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -59,11 +59,68 @@
                     <navigationItem key="navigationItem" title="Contact Table" id="FPy-xG-LRC"/>
                     <connections>
                         <outlet property="contactTable" destination="b7C-gr-7gk" id="LsU-LR-QgX"/>
+                        <segue destination="ojn-2a-mMi" kind="show" identifier="DetailContactViewController" id="PYg-aw-Naf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="973.84615384615381" y="-34.123222748815166"/>
+        </scene>
+        <!--Detail Contact View Controller-->
+        <scene sceneID="nww-XH-XJf">
+            <objects>
+                <viewController id="ojn-2a-mMi" customClass="DetailContactViewController" customModule="Tables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6NX-g9-IxN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sln-fB-wfP">
+                                <rect key="frame" x="25" y="106" width="57" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgS-Cw-Sex">
+                                <rect key="frame" x="25" y="228" width="53" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k9-0M-d5U">
+                                <rect key="frame" x="25" y="153" width="44" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThD-ZA-Zg9">
+                                <rect key="frame" x="25" y="275" width="44" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ifS-39-VAN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0k9-0M-d5U" firstAttribute="top" secondItem="Sln-fB-wfP" secondAttribute="bottom" constant="25" id="6U4-as-dJz"/>
+                            <constraint firstItem="ThD-ZA-Zg9" firstAttribute="top" secondItem="dgS-Cw-Sex" secondAttribute="bottom" constant="25" id="D3M-43-4ge"/>
+                            <constraint firstItem="Sln-fB-wfP" firstAttribute="top" secondItem="ifS-39-VAN" secondAttribute="top" constant="15" id="Hfh-w9-FaX"/>
+                            <constraint firstItem="0k9-0M-d5U" firstAttribute="leading" secondItem="ifS-39-VAN" secondAttribute="leading" constant="25" id="S7O-Cy-zm4"/>
+                            <constraint firstItem="ThD-ZA-Zg9" firstAttribute="leading" secondItem="ifS-39-VAN" secondAttribute="leading" constant="25" id="Sq7-UU-g07"/>
+                            <constraint firstItem="dgS-Cw-Sex" firstAttribute="top" secondItem="Sln-fB-wfP" secondAttribute="bottom" constant="100" id="eGE-Xl-sUh"/>
+                            <constraint firstItem="dgS-Cw-Sex" firstAttribute="leading" secondItem="ifS-39-VAN" secondAttribute="leading" constant="25" id="g2Z-ge-JvK"/>
+                            <constraint firstItem="Sln-fB-wfP" firstAttribute="leading" secondItem="ifS-39-VAN" secondAttribute="leading" constant="25" id="uex-l4-f6a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pTd-7j-pdC"/>
+                    <connections>
+                        <outlet property="lblData" destination="0k9-0M-d5U" id="IOc-Jn-tH6"/>
+                        <outlet property="lblEmail" destination="ThD-ZA-Zg9" id="wfk-V1-taP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zD-nt-f3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1787.6923076923076" y="-21.327014218009477"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D31-hx-s0r">

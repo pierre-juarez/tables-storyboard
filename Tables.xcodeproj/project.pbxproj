@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55AF7FFB29F8366D007F2471 /* DetailContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF7FFA29F8366D007F2471 /* DetailContactViewController.swift */; };
 		55E0061C29F792DF00BE2CA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E0061B29F792DF00BE2CA9 /* AppDelegate.swift */; };
 		55E0061E29F792DF00BE2CA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E0061D29F792DF00BE2CA9 /* SceneDelegate.swift */; };
 		55E0062029F792DF00BE2CA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E0061F29F792DF00BE2CA9 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55AF7FFA29F8366D007F2471 /* DetailContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactViewController.swift; sourceTree = "<group>"; };
 		55E0061829F792DF00BE2CA9 /* Tables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E0061B29F792DF00BE2CA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55E0061D29F792DF00BE2CA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				55E0061B29F792DF00BE2CA9 /* AppDelegate.swift */,
 				55E0061D29F792DF00BE2CA9 /* SceneDelegate.swift */,
 				55E0061F29F792DF00BE2CA9 /* ViewController.swift */,
+				55AF7FFA29F8366D007F2471 /* DetailContactViewController.swift */,
 				55E0062129F792DF00BE2CA9 /* Main.storyboard */,
 				55E0062429F792E100BE2CA9 /* Assets.xcassets */,
 				55E0062629F792E100BE2CA9 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				55E0062029F792DF00BE2CA9 /* ViewController.swift in Sources */,
 				55E0061C29F792DF00BE2CA9 /* AppDelegate.swift in Sources */,
+				55AF7FFB29F8366D007F2471 /* DetailContactViewController.swift in Sources */,
 				55E0061E29F792DF00BE2CA9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
